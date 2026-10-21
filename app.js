@@ -65,8 +65,8 @@
       for (let i = 0; i < length; i++) {
         const from = oldText[i] || "";
         const to = newText[i] || "";
-        const start = Math.floor(Math.random() * 30);
-        const end = start + Math.floor(Math.random() * 30);
+        const start = Math.floor(Math.random() * 8);
+        const end = start + 5 + Math.floor(Math.random() * 8);
         this.queue.push({ from, to, start, end, char: "" });
       }
       cancelAnimationFrame(this.frameRequest);
@@ -84,7 +84,7 @@
           complete++;
           output += item.to;
         } else if (this.frame >= item.start) {
-          if (!item.char || Math.random() < 0.3) {
+          if (!item.char || Math.random() < 0.5) {
             item.char = this.chars[Math.floor(Math.random() * this.chars.length)];
           }
           output += '<span class="scr">' + item.char + "</span>";
