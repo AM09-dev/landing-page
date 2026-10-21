@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jorge Arturo Molina Gómez — Ingeniero en Desarrollo de Software. Portafolio web: Frontend, Full Stack y diseño de interfaces Cyber-Traditional." />
+  <meta name="theme-color" content="#0b0b0d" />
+  <title>Jorge A. Molina Gómez | Ingeniero en Desarrollo de Software</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="kanji-field" aria-hidden="true">
+    <span class="kanji k1">笑顔</span>
+    <span class="kanji k2">魂</span>
+    <span class="kanji k3">力</span>
+    <span class="kanji k4">開</span>
+    <span class="kanji k5">道</span>
+    <span class="kanji k6">夢</span>
+  </div>
+
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" id="header">
+    <nav class="nav container" aria-label="Navegación principal">
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-list" id="navList">
+        <li><a href="#inicio" class="nav-link active">INICIO</a></li>
+        <li><a href="#sobre-mi" class="nav-link">SOBRE MÍ</a></li>
+        <li><a href="#stack" class="nav-link">STACK</a></li>
+        <li><a href="#contacto" class="nav-link">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" id="inicio">
+      <div class="container hero-inner">
+        <div class="hero-photo">
+          <span class="photo-ring" aria-hidden="true"></span>
+          <img
+            src="foto.jpg"
+            alt="Jorge Arturo Molina Gómez"
+            onerror="this.style.display='none';document.getElementById('photoFallback').classList.add('show');"
+          />
+          <span class="photo-fallback" id="photoFallback">JM</span>
+        </div>
+
+        <h1 class="hero-name"><span class="scramble-line">Jorge Arturo</span><br /><span class="scramble-line accent">Molina Gómez</span></h1>
+        <h2 class="hero-title">Ingeniero en Desarrollo de Software</h2>
+
+        <div class="hero-actions">
+          <a href="mailto:molinagomezjorgearturo9@gmail.com" class="btn btn-neon">
+            <i class="fa-regular fa-paper-plane"></i> Contactar
+          </a>
+          <a href="#stack" class="btn btn-ghost">Ver Stack</a>
+        </div>
+      </div>
+
+      <a href="#sobre-mi" class="scroll-hint" aria-label="Desplazarse a Sobre Mí">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <section class="section" id="sobre-mi">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-index">01</span>
+          <h2 class="section-title">Sobre Mí</h2>
+          <span class="section-jp">自己紹介</span>
+        </header>
+
+        <div class="about-text">
+          <p><strong>Ingeniero graduado de la UPChiapas</strong>, apasionado por el desarrollo de aplicaciones web y móviles. Me enfoco en Frontend y Full Stack, traduciendo ideas en productos funcionales, rápidos y con identidad visual propia.</p>
+          <p>Creo en el aprendizaje continuo, en el detalle cuidado y en la disciplina del <em>SAMURAI MINDSET</em>: constancia, enfoque y mejora diaria. Cada línea de código es una oportunidad para hacerlo mejor que ayer.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="stack">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-index">02</span>
+          <h2 class="section-title">Stack Tecnológico</h2>
+          <span class="section-jp">技術力</span>
+        </header>
+
+        <div class="stack-grid">
+          <span class="badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+          <span class="badge"><i class="fa-brands fa-python"></i> Python</span>
+          <span class="badge"><i class="fa-brands fa-microsoft"></i> C# (Blazor/MudBlazor)</span>
+          <span class="badge"><i class="fa-brands fa-react"></i> React</span>
+          <span class="badge"><i class="fa-brands fa-node-js"></i> Next.js</span>
+          <span class="badge"><i class="fa-brands fa-flutter"></i> Flutter</span>
+          <span class="badge"><i class="fa-brands fa-html5"></i> HTML5</span>
+          <span class="badge"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+          <span class="badge"><i class="fa-solid fa-database"></i> SQL Server</span>
+          <span class="badge"><i class="fa-solid fa-leaf"></i> MongoDB</span>
+          <span class="badge"><i class="fa-solid fa-database"></i> MySQL</span>
+          <span class="badge"><i class="fa-brands fa-figma"></i> Figma</span>
+          <span class="badge"><i class="fa-solid fa-code-branch"></i> Git</span>
+          <span class="badge"><i class="fa-brands fa-github"></i> GitHub</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-quotes" id="frases">
+      <div class="container">
+        <div class="quote-wrap">
+          <div class="quote-frame" id="quoteFrame">
+            <span class="q-corner qc-tl"></span><span class="q-corner qc-tr"></span>
+            <span class="q-corner qc-bl"></span><span class="q-corner qc-br"></span>
+            <div class="quote-kanji" id="quoteKanji" aria-hidden="true">魂</div>
+
+            <p class="quote-jp" id="quoteJp">七転び八起き</p>
+            <blockquote class="quote-text" id="quoteText">"Cuántas veces caigas, cuántas veces te levantes."</blockquote>
+
+            <div class="quote-actions">
+              <button class="btn btn-neon" id="newQuote" type="button">
+                <i class="fa-solid fa-shuffle"></i> Nueva Frase
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacto">
+    <div class="container footer-grid">
+      <div class="footer-contact">
+        <p class="footer-contact-title">Contacto</p>
+        <a href="mailto:molinagomezjorgearturo9@gmail.com"><i class="fa-regular fa-envelope"></i> molinagomezjorgearturo9@gmail.com</a>
+        <a href="tel:+522205586801"><i class="fa-solid fa-phone"></i> 220-558-6801</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://wa.me/522205586801" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
